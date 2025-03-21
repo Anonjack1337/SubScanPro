@@ -1,0 +1,6 @@
+https://paragonrsps.com/wp-config.php
+https://paragonrsps.com/.htpasswd
+https://paragonrsps.com/php.ini
+https://paragonrsps.com/.htaccess
+https://paragonrsps.com/store2
+https://paragonrsps.com/.env
