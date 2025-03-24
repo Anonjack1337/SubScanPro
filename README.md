@@ -1,6 +1,6 @@
-# SubScanPro
+# WebProbeJ
 
-**SubScanPro** is a lightweight multithreaded tool built in Java to scan a target domain and its discovered subdomains for the existence of specific files or paths. Great for reconnaissance, bug bounty, or security research.
+**WebProbeJ** is a lightweight multithreaded tool built in Java to scan a target domain and its discovered subdomains for the existence of specific files or paths. Great for reconnaissance, bug bounty, or security research.
 
 ## Features
 
