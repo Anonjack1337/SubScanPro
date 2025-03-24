@@ -1,26 +1,30 @@
 # WebProbeJ
 
-**WebProbeJ** is a lightweight multithreaded tool built in Java to scan a target domain and its discovered subdomains for the existence of specific files or paths. Great for reconnaissance, bug bounty, or security research.
+A powerful Java-based reconnaissance tool for discovering:
 
-## Features
+- Valid directories and files across domains and subdomains
+- Sitemap and homepage-extracted folders
+- Common backup file names (e.g. `.zip`, `.rar`, `.tar.gz`)
+- Sensitive files like `.env`, `config.js`, `apikey.txt`, etc.
 
-- Fetches subdomains using WhoisXML API
-- Scans main and subdomains for potential file paths
-- Supports multithreaded concurrent scanning (configurable)
-- Logs all successful hits to a file
-- Ignores unnecessary or common infrastructure subdomains (like cpanel, webmail)
+---
 
-## Requirements
+## ✨ Features
 
-- Java 11+
-- A WhoisXML API key (you can get one from [whoisxmlapi.com](https://whoisxmlapi.com)) 500 API Searches FREE Per Account
+- Scans root domain + all discovered subdomains
+- Parses sitemap and homepage for hidden folders
+- Flags sensitive files with alerts
+- Scans using customizable wordlists (`directories.dat`)
+- Auto-generates backup filename guesses per domain
+- Avoids false positives via intelligent filtering (e.g. redirect detection)
 
-## 🛠 Setup
+---
 
-1. Clone or download the project.
-2. Create a file named `directories.dat` in the root directory. Each line should be a possible path to test (e.g., `backup.zip`, `.env`, `admin.php`).
-3. Open `FileSearcher.java` and replace the API key and domain values.
+## ⚙️ Configuration
+
+Edit the `Config.java` file to set:
 
 ```java
-private static final String API_KEY = "your_api_key_here";
-private static final String DOMAIN = "example.com";
+public static final String DOMAIN = "example.com";
+public static final String INPUT_FILE = "directories.dat";
+public static final String OUTPUT_FILE = "working_links.txt";
