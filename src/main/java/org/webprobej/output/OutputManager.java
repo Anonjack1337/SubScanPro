@@ -1,4 +1,4 @@
-package org.example.subscanpro.output;
+package org.webprobej.output;
 
 import java.io.IOException;
 import java.nio.file.*;

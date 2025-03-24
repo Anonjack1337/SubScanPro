@@ -1,9 +1,9 @@
 // Scanner.java
-package org.example.subscanpro.core;
+package org.webprobej.core;
 
-import org.example.subscanpro.config.Config;
-import org.example.subscanpro.network.HttpUtil;
-import org.example.subscanpro.output.OutputManager;
+import org.webprobej.config.Config;
+import org.webprobej.network.HttpUtil;
+import org.webprobej.output.OutputManager;
 
 import java.nio.file.Path;
 import java.util.*;

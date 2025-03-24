@@ -1,4 +1,4 @@
-package org.example.subscanpro.network;
+package org.webprobej.network;
 
 import javax.net.ssl.*;
 import java.io.IOException;

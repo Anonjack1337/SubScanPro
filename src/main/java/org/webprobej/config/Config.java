@@ -1,9 +1,9 @@
-package org.example.subscanpro.config;
+package org.webprobej.config;
 
 import java.util.List;
 
 public class Config {
-    public static final String DOMAIN = "example.com";
+    public static final String DOMAIN = "webprobej.com";
     public static final String INPUT_FILE = "directories.dat"; // shell.dat
     public static final String OUTPUT_FILE = "working_links.txt";
     public static final int THREADS = 10;

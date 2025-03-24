@@ -1,6 +1,6 @@
-package org.example.subscanpro.network;
+package org.webprobej.network;
 
-import org.example.subscanpro.config.Config;
+import org.webprobej.config.Config;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,6 +1,7 @@
-package org.example.subscanpro.core;
+package org.webprobej.core;
 
-import org.example.subscanpro.network.HttpUtil;
+import org.webprobej.config.Config;
+import org.webprobej.network.HttpUtil;
 
 import java.io.IOException;
 import java.net.URL;
@@ -8,7 +9,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.regex.Pattern;
-import org.example.subscanpro.config.Config;
 
 
 public class DirectoryLoader {

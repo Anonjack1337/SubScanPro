@@ -1,10 +1,11 @@
-package org.example.subscanpro;
+package org.webprobej;
 
-import org.example.subscanpro.config.Config;
-import org.example.subscanpro.core.DirectoryLoader;
-import org.example.subscanpro.core.Scanner;
-import org.example.subscanpro.network.SubdomainFetcher;
-import org.example.subscanpro.output.OutputManager;
+import org.webprobej.network.HttpUtil;
+import org.webprobej.config.Config;
+import org.webprobej.core.DirectoryLoader;
+import org.webprobej.core.Scanner;
+import org.webprobej.network.SubdomainFetcher;
+import org.webprobej.output.OutputManager;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -44,7 +45,7 @@ public class Main {
         Set<String> validFolders = new LinkedHashSet<>();
         for (String folder : folderSeeds) {
             String fullUrl = "https://" + domain + "/" + folder;
-            if (org.example.subscanpro.network.HttpUtil.urlExists(fullUrl)) {
+            if (HttpUtil.urlExists(fullUrl)) {
                 validFolders.add(folder);
             }
         }
@@ -73,7 +74,7 @@ public class Main {
             String base = domain + "/" + folder;
             String fullUrl = "https://" + base;
 
-            if (!org.example.subscanpro.network.HttpUtil.urlExists(fullUrl)) {
+            if (!HttpUtil.urlExists(fullUrl)) {
                 continue;
             }
 
